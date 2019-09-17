@@ -6,11 +6,13 @@ body{
     margin:0;
     width: 100%;
     background-color: #000;
+    overflow-x: hidden;
 }
 
 .one{
-    margin: 0;
-    height: 500px;
+    margin-top: -1%;
+    height: 520px;
+    padding-top:1%;
     width: 100%;
     background-image: linear-gradient(rgba(36, 36, 36, 0.5), rgba(34, 34, 34, 0.5)),url(J4o.gif);  /* background-size: 100%  */
     /* opacity: 0.5; */
@@ -66,6 +68,7 @@ body{
    .one h2 {
      font-size: 40px;
     }
+    
   }
  
 /*
@@ -114,6 +117,15 @@ body{
     font-family: 'Orbitron', sans-serif;
     font-size: 70px;
     color: aliceblue;
+}
+@media screen and (max-width:768px){
+    .one p{
+        margin-top: 0px;
+        /* margin-left: 450px; */
+        font-family: 'Orbitron', sans-serif;
+        font-size: 40px;
+        color: aliceblue;
+    }
 }
 
 @media(max-width:514px){
@@ -185,7 +197,7 @@ body{
     font-size: 30px;
     display: none;
   }
-  @media(max-width:902px){
+  @media(max-width:900px){
     .toggle{
       display: block;
     }
@@ -204,6 +216,11 @@ body{
     display: block;
   }
   }
+  .butt{
+    background: #333;
+    border-color:#333;
+    border:0;
+  }
 .main{
     /* display: inline; */
     /* margin-bottom: 0px; */
@@ -220,11 +237,14 @@ body{
     /*  */
     font-size: 16   px;
 }
-.abouts h2{
+/* .abouts h2{
     font-family: 'Roboto Mono', monospace;
+} */
+.about2{
+    padding-bottom:-2%;
 }
 .about2 h1{
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     text-align: center;
     font-size: 70px;
 }
@@ -234,20 +254,31 @@ body{
     }
 }
 .about2 h2{
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     text-align: center;
 }
 .about2 h3{
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     text-align: center;  
 }
-.about2 h6{
+.about2 h5{
     text-align: center;
 }
 .about2 p{
     font-size: 20px;
     padding-left: 400px;
     padding-right: 400px;
+    text-align: center;
+}
+/* .about2 p p div div {
+    font-size: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: center;
+} */
+.faculty{
+    width:100%;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -257,7 +288,7 @@ body{
     padding: 10px;
 }
 }
-@media(max-width:768px){
+@media(max-width:1100px){
     .about2 p{
         font-size: 20px;
         padding: 10px;
@@ -288,7 +319,7 @@ margin-top: 50px;
 margin-right: 100px;
 display: inline-block;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
     .images{
         height: 50%;
         padding: 40px;
@@ -296,7 +327,7 @@ display: inline-block;
 
     }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:769px){
     .images{
         height: 50%;
         margin-right: 0;
@@ -338,17 +369,30 @@ display: inline-block;
 }
 
 .six {
-    height: 300px;
+    height: 200px;
     width: 100%;
     /* text-align: center; */
     color: #fff;
     background-color: #262626;
+}
+@media(max-width:767px){
+    .six {
+        height: 280px;
+        width: 100%;
+        /* text-align: center; */
+        color: #fff;
+        background-color: #262626;
+    }
+}
+.modal-lg {
+    max-width: 90%;
 }
 .cordinator{
     display: inline-block;
     text-align: left;
     padding: 20px;
     margin: 0;
+    width:70%;
 }
 .cordinator h4{
     margin: 0;
@@ -416,18 +460,29 @@ display: inline-block;
 	font-family: sans-serif;
 	background: #262626;
 } */
+
 .testimonials
 {
-    margin: 50px auto 50px;
+    margin: 50px auto 10px;
 	display: grid;
 	grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     background-color: #262626;
 }
+@media only screen and (min-width:850px){
+    .testimonials
+    {
+        margin: 50px auto 10px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(20%, 1fr));
+        grid-gap: 20px;
+        background-color: #262626;
+    }
+}
 .testimonials .card
 {
 	position: relative;
-    width: 350px;
+    width: 100%;
     /* height: 300px; */
 	margin: 0 auto;
 	background: #333;
@@ -468,8 +523,8 @@ display: inline-block;
 }
 .testimonials .card .content .image
 {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
@@ -483,8 +538,8 @@ display: inline-block;
     bottom: 0;
     right: 0;
     left: 0; */
-    width: 100px;
-	height: 100px;
+    width: 151px;
+	height: 151px;
 	margin: 0 auto;
 	border-radius: 50%;
 }
@@ -517,8 +572,8 @@ display: inline-block;
   }
 .time h2{
     color: #a6ff00;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 40px;
     font-family: 'Monoton', cursive;
     /* 'Merriweather', serif; */
@@ -529,7 +584,7 @@ display: inline-block;
     color: aqua;
     border-top: 2px dashed;
     border-color: blue !important;
-    margin:0; padding: 30px;
+    margin:0; padding: 20px;
     font-size: 29px;
   }
   .time span{
@@ -572,6 +627,7 @@ display: inline-block;
 } 
 .venue h2{
     font-size: 40px;
+    margin-bottom:-2%;
 }
  .venue p{
     font-size: 25px;
@@ -659,7 +715,8 @@ display: inline-block;
   } */
 #rules{
     /* padding-left: 500px; */
-    text-align: left;
+    margin-top:-3%;
+    text-align: justify;
 }
 .sahil h2{
     text-align: center;
